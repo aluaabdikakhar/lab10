@@ -1,0 +1,10 @@
+div{
+    cursor: pointer;
+    background: rgb(80, 169, 229);
+    padding: 0 50px;
+    border-radius: 4px;
+    color: black;
+}
+*{
+    margin: 0;
+}

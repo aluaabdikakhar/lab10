@@ -1,0 +1,21 @@
+<div>
+    <h3>
+        <a [title] = "company.name + ': ' + company.description">
+          {{company.name}}
+        </a>
+        
+      </h3>
+      <p *ngIf="company.description">
+        <span>Description:</span> {{company.description}}
+    </p>
+    <div *ngFor="let vacancy of vacancies">
+      
+          <a>
+              {{vacancy.name}}
+          </a>
+  
+      
+     
+     
+  </div>
+</div>

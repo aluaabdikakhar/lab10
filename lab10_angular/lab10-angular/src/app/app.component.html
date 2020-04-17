@@ -1,0 +1,17 @@
+
+<app-top-bar></app-top-bar>
+<div *ngIf="!logged">
+  <h1>Login form</h1>
+  <p> Username: 
+    <input [(ngModel)] = "username">
+  </p>
+  <p> Password: 
+    <input [(ngModel)] = "password">
+  </p>
+  
+  <button (click)="login()">Log In</button>
+</div>
+<div class="container" *ngIf="logged">
+  <router-outlet></router-outlet>
+  <button (click)="logout">Log Out</button>
+</div>
